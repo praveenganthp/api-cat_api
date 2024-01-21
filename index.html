@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Gallery</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Adjust the gap as needed */
+            justify-content:center;
+        }
+
+        .cat-card {
+            flex: 0 1 calc(25.33% - 20px); /* 33.33% width for each card with 20px gap */
+            border: 1px solid #ccc;
+            text-align: center;
+            overflow: hidden; /* Ensure consistent height for images */
+        }
+
+        img {
+            width: 100%; /* Ensure images fill the container width */
+            aspect-ratio: 3/4; /* Maintain aspect ratio */
+            display: block; /* Remove any extra spacing below images */
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cat-container">
+        <!-- Your cat cards will be added here dynamically -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
